@@ -4,29 +4,19 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => (
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    className={"padding-4 inset-0 bg-gradient-to-r from-blue-400 to-green-500 shadow-lg font-sans"}
   >
     <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
+
     >
-      <h1 style={{ margin: 0 }}>
+
         <Link
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          className={"text-white"}
         >
           {siteTitle}
         </Link>
-      </h1>
+
     </div>
   </header>
 )

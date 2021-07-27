@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import "../styles/global.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -33,11 +34,11 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <main
+            className={"font-sans"}
+        >{children}</main>
         <footer
-          style={{
-            marginTop: `2rem`,
-          }}
+          className={"text-gray-600 font-sans"}
         >
           © {new Date().getFullYear()}, Built with
           {` `}
