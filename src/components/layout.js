@@ -25,27 +25,22 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className={"flex flex-col h-screen justify-between"}>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+
         <main
-            className={"font-sans"}
-        >{children}</main>
+            className={"font-sans mb-auto p-4"}
+        >{children}
+        </main>
         <footer
-          className={"text-gray-600 font-sans"}
+          className={"py-2 px-4 border-t text-gray-600 font-sans"}
         >
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
-      </div>
-    </>
+
+    </div>
   )
 }
 
