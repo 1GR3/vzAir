@@ -8,12 +8,12 @@ const Header = ({ siteTitle }) => (
   >
     <div className={"container mx-auto grid grid-cols-2"}>
         <div
-            className={"py-2"}
+            className={"py-0"}
         >
 
             <Link
               to="/"
-              className={"text-white py-2"}
+              className={"text-white"}
             >
               {siteTitle}
             </Link>
@@ -22,11 +22,12 @@ const Header = ({ siteTitle }) => (
         <div
             className={"text-right"}
         >
-            <button
+            <Link
+                to={"/report/"}
                 className={"bg-transparent hover:bg-white text-white font-semibold hover:text-blue-500 py-2 px-4 border border-white-500 hover:border-transparent rounded"}
             >
                 +
-            </button>
+            </Link>
         </div>
     </div>
   </header>
