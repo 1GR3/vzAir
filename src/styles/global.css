@@ -3,3 +3,16 @@
 @tailwind utilities;
 
 font-family: sans-serif;
+
+@layer utilities {
+    ul.report-list {
+    @apply py-4;
+        li {
+            @apply
+            bg-transparent hover:bg-blue-300
+            text-gray-700  hover:text-white
+            border border-gray-500 hover:border-transparent
+            rounded py-3 px-4 font-semibold;
+        }
+    }
+}

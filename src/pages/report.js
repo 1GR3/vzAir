@@ -8,7 +8,7 @@ const reportPage = () => (
     <Layout>
         <Seo title="Report" />
         <h1>Prijavite:</h1>
-        <ul className={"ml-0"}>
+        <ul className={"ml-0 report-list"}>
             <li>
                 <Link to="/">Smrad</Link>
             </li>
