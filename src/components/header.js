@@ -8,25 +8,18 @@ const Header = ({ siteTitle }) => (
   <header
     className={"p-4 inset-0 bg-gradient-to-r from-blue-400 to-green-500 shadow-lg font-sans"}
   >
-    <div className={"container mx-auto grid grid-cols-2"}>
-        <div
-            className={"py-0"}
-        >
-            <button className={"inline-block mr-2"}>
-                <MenuIcon className="h-5 w-5 text-white"/>
-            </button>
-
+    <div className={"mx-auto grid grid-cols-3"}>
+        <div className={"py-0"} >
             <Link
-              to="/"
-              className={"text-white inline-block"}
+                className={"bg-transparent hover:bg-white text-white font-semibold hover:text-blue-500 py-2 px-4 border border-white-500 hover:border-transparent rounded"}
             >
-              {siteTitle}
+                <MenuIcon className=" inline-block h-5 w-5 "/>
             </Link>
-
         </div>
-        <div
-            className={"text-right"}
-        >
+        <div className={"text-white text-center"}>
+            {siteTitle}
+        </div>
+        <div className={"text-right"} >
             <Link
                 to={"/report/"}
                 className={"bg-transparent hover:bg-white text-white font-semibold hover:text-blue-500 py-2 px-4 border border-white-500 hover:border-transparent rounded"}
