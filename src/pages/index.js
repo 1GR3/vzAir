@@ -7,6 +7,11 @@ import Seo from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
+      <div className={"flex sm:inline-block md:block"}>
+          <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">temperatura/tlak/relativna vlaga</div>
+          <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">Nano čestice 0.3-2.5/2.5-5/5+</div>
+          <div className="flex-1 text-gray-700 text-center bg-gray-400 px-4 py-2 m-2">amonijak/okidacijski/redukcijski</div>
+      </div>
       <Seo title="Home" />
       <h1>VŽ Air</h1>
       <p>Environmental quality tracker in Varaždin</p>
