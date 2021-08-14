@@ -24,7 +24,7 @@ function Particles () {
                 // hAxis: { title: 'Year', titleTextStyle: { color: '#333' } },
                 vAxis: { minValue: 0 },
                 // For the legend to fit, we make the chart area smaller
-                chartArea: { width: '90%', height: '70%' },
+                chartArea: { width: '95%', height: '70%' },
                 colors: ['#0ec29e', '#30cec8', '#6de3f3', '#aae2fc', '#f6c7b6'],
                 backgroundColor: { fill:'transparent' },
                 lineWidth: 2
