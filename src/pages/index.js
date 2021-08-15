@@ -25,7 +25,7 @@ const IndexPage = () => (
           </div>
       </div>
       <Seo title="Home" />
-      <h1>VŽ Air</h1>
+      <h1>VŽ Air - GIT test</h1>
       <p>Environmental quality tracker in Varaždin</p>
       <p>
         <Link to="/page-2/">Go to page 2</Link> <br />
