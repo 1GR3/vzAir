@@ -5,6 +5,35 @@
 font-family: sans-serif;
 
 @layer utilities {
+
+
+    .wrapper {
+        display: flex;
+      aside {
+          flex-basis: 1;
+          flex-grow: 1;
+          flex-shrink: 1;
+          a {
+              svg {
+                  margin-right: 5px;
+              }
+              opacity: 1;
+              color: white;
+              transition: opacity .25s;
+              &:hover {
+                opacity: 0.75;
+              }
+          }
+      }
+      main {
+          flex-basis: 0;
+          flex-grow: 999;
+          min-width: 50%;
+      }
+    }
+
+
+
     ul.report-list {
     @apply py-4;
         li {
