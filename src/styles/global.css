@@ -44,6 +44,15 @@ font-family: sans-serif;
       }
     }
 
+    #sorting {
+        button {
+            @apply
+            bg-gradient-to-b from-gray-400 to-gray-500
+            border-gray-100 text-gray-100
+            hover:bg-blue-400 px-3 py-1 mx-0 outline-none
+        }
+
+    }
 
 
     ul.report-list {

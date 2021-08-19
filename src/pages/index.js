@@ -8,9 +8,11 @@ import Gas from "../components/charts/gas"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Sorting from "../components/time-sorting";
 
 const IndexPage = () => (
   <Layout>
+      <Sorting/>
       <div className={"flex sm:inline-block md:block"}>
           <div className="flex-1 text-gray-700 text-center bg-gradient-to-br from-gray-400 to-gray-500 px-4 py-2 m-2">
               <TPH/>
