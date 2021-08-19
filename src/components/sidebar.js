@@ -14,6 +14,12 @@ const Sidebar = () => (
             <ul className={"m-0"}>
                 <li>
                     <Link to={""}>
+                        <LocationMarkerIcon className={"w-5 h-5 align-center inline-block"}/>
+                        karta
+                    </Link>
+                </li>
+                <li>
+                    <Link to={""}>
                         <CogIcon className={"w-5 h-5 align-center inline-block"}/>
                         postavke
                     </Link>
