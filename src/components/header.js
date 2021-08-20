@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
     return(
 
   <header
-    className={"p-4 position-sticky inset-0 bg-gradient-to-r from-blue-400 to-green-500 shadow-lg font-sans"}
+    className={`p-4 position-sticky inset-0 bg-gradient-to-r from-blue-400 to-green-500 shadow-lg font-sans ${toggle ? 'open-sidebar' : ''}`}
   >
     <div className={"mx-auto grid grid-cols-3"}>
         <div className={"py-0"} >
