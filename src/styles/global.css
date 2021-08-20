@@ -14,6 +14,13 @@ font-family: sans-serif;
         height: 60px;
         z-index: 100;
     }
+    #burgerButton {
+        &.active {
+            background-color: rgba(0,0,0, 0.2);
+            color: white;
+         }
+    }
+
     .wrapper {
         display: flex;
         margin-top: 60px;
